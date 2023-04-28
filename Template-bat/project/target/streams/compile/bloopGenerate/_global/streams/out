@@ -1,0 +1,4 @@
+[debug] [template-bat-build] Classpath dependencies List()
+[debug] [template-bat-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'template-bat-build' to '/home/adgert/Desktop/test/my_SpinalHDL_test_git/Template-bat/project/.bloop/template-bat-build.json'
+[success] Generated .bloop/template-bat-build.json
