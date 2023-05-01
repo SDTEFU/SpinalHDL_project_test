@@ -10,9 +10,7 @@ module template (
   input               io_start,
   input      [7:0]    io_data,
   output              io_rs232_tx,
-  output              io_done,
-  input               clk,
-  input               reset
+  output              io_done
 );
 
   reg        [7:0]    clkarea_data_bat;

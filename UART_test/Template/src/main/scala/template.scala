@@ -139,11 +139,15 @@ class template(sys_clk: Int, baund: Int) extends Module {
 
 
 object template extends App {
-  SpinalVerilog(new template(27000000, 115200))
+
+  SpinalConfig(
+    mode = Verilog,
+    targetDirectory = "./RTL_verilog_code"
+  ).generate(new template(27000000, 115200))
 
   import spinal.core.sim._
 
-  SimConfig.withWave.compile(new template(27000000, 115200)).doSim { dut =>
+  SimConfig.withWave.workspacePath("./RTL_SIM").compile(new template(27000000, 115200)).doSim { dut =>
 
     dut.clkdmi.forkStimulus(10)
 

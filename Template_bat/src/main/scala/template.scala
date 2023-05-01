@@ -8,5 +8,8 @@ class template extends Module {
 
 
 object template extends App {
-  SpinalVerilog(new template())
+  SpinalConfig(
+    mode = Verilog,
+    targetDirectory = "./RTL_verilog_code"
+  ).generate(new template)
 }
