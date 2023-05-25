@@ -184,7 +184,7 @@ public:
       #ifdef TRACE
       Verilated::traceEverOn(true);
       top.trace(&tfp, 99);
-      tfp.open((std::string("/home/adgert/Desktop/test/SpinalHDL_project_test/UART_test/Template/./RTL_SIM/template/") + name + ".vcd").c_str());
+      tfp.open((std::string("/home/adgert/Desktop/test/git-project/SpinalHDL_project_test/UART_test/Template/./RTL_SIM/template/") + name + ".vcd").c_str());
       #endif
       this->name = name;
       this->time_precision = Verilated::timeprecision();
@@ -200,7 +200,7 @@ public:
       tfp.close();
       #endif
       #ifdef COVERAGE
-      VerilatedCov::write((("/home/adgert/Desktop/test/SpinalHDL_project_test/UART_test/Template/./RTL_SIM/template/") + name + ".dat").c_str());
+      VerilatedCov::write((("/home/adgert/Desktop/test/git-project/SpinalHDL_project_test/UART_test/Template/./RTL_SIM/template/") + name + ".dat").c_str());
       #endif
     }
 
